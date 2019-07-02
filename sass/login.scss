@@ -1,0 +1,120 @@
+@import "common.scss";
+
+body{
+    background-color: #85d2c5;
+    padding-top: 1.95rem;
+}
+
+.logo{
+    text-align: center;
+
+    img{
+        width: 5.06rem;
+        height: 1.8rem;
+    }
+}
+
+#login{
+    text-align: center;
+    margin-top: 1.15rem;
+
+    @mixin inputbox {
+        width: 60%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 0.02rem solid #77bdb1;
+        padding-left: 1.68rem;
+        padding-bottom: 0.26rem;
+        margin-bottom: 0.46rem;
+        font-size: 0.48rem;
+    }
+
+    #email{
+        @include inputbox();
+        background: url("../images/email.png") 0.07rem top no-repeat;
+        background-size: 0.76rem 0.6rem;
+    }
+
+    #password{
+        @include inputbox();
+        background: url("../images/lock.png") 0.07rem top no-repeat;
+        background-size: 0.64rem 0.7rem;
+    }
+
+    #email::placeholder,
+    #password::placeholder{
+        font-size: 0.48rem;
+    }
+
+    #submit{
+        display: block;
+        width: 40%;
+        margin: 0.14rem auto 0;
+        font-size: 0.48rem;
+        color: #ffffff;
+        padding: 0.2rem 0;
+        background-color: #705d76;
+        border: none;
+        outline: none;
+        border-radius: 0.1rem;
+        box-shadow: 0 0.05rem 0.1rem #5c4d61;
+    }
+}
+
+.password-forgot{
+    display: block;
+    width: fit-content;
+    margin: 0.4rem auto 0;
+    font-size: 0.36rem;
+    color: #ffffff;
+}
+
+.login-footer{
+    background-color: #6aa89e;
+    padding-top: 0.42rem;
+    padding-bottom: 0.32rem;
+    position: absolute;
+    bottom: 0;
+
+    .facebook-login{
+        display: block;
+        width: 40%;
+        height: 1rem;
+        margin: 0 auto;
+        font-size: 0.3rem;
+        line-height: 0.3rem;
+        color: #ffffff;
+        border: 0.02rem solid #ffffff;
+        border-radius: 0.1rem;
+        background-color: rgba($color: #ffffff, $alpha: 0.5);
+        position: relative;
+        text-align: center;
+
+        img{
+            width: 0.28rem;
+            height: 0.6rem;
+            position: absolute;
+            top: 0.16rem;
+            left: 0.3rem;
+        }
+
+        span{
+            display: inline-block;
+            position: absolute;
+            top: 0.3rem;
+            left: 0.8rem;
+        }
+    }
+
+    .sign-up{
+        text-align: center;
+        margin-top: 0.3rem;
+
+        a{
+            font-size: 0.3rem;
+            color: #ffffff;
+            text-decoration: underline;
+        }     
+    }
+}
