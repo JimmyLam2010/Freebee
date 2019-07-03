@@ -53,7 +53,7 @@ body {
   padding-top: 0.27rem;
   padding-bottom: 0.27rem;
   position: fixed;
-  bottom: 0.5rem;
+  bottom: 0;
   z-index: 10; }
   .footer ul {
     display: flex;
