@@ -8,7 +8,7 @@ body {
   height: 1.1rem;
   padding-bottom: 0.32rem;
   text-align: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   box-shadow: 0 0.1rem 0.1rem #aea9a2;
   z-index: 10; }
@@ -35,6 +35,7 @@ body {
     content: '5';
     width: 0.6rem;
     height: 0.6rem;
+    font-size: 0.36rem;
     background-color: #fadb9b;
     border-radius: 0.1rem;
     position: absolute;
@@ -51,8 +52,8 @@ body {
   box-shadow: 0 -0.1rem 0.1rem #333333;
   padding-top: 0.27rem;
   padding-bottom: 0.27rem;
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  bottom: 0.5rem;
   z-index: 10; }
   .footer ul {
     display: flex;
@@ -68,15 +69,14 @@ body {
 
 .left-menu {
   width: 4.54rem;
-  height: 100%;
+  height: 90%;
   background-color: #685e55;
   text-align: center;
-  padding-top: 0.66rem;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
+  padding: 0.66rem 0.2rem;
+  overflow-y: scroll;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -4.94rem;
   z-index: 11; }
   .left-menu form {
     position: relative; }
@@ -164,7 +164,8 @@ body {
   padding-top: 2.2rem;
   padding-bottom: 2rem;
   overflow-y: scroll;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  position: absolute; }
   .profile .profile-photo {
     background-image: url("../images/profile_bg.png");
     background-size: cover;
