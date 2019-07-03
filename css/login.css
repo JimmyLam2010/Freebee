@@ -63,7 +63,7 @@ body {
   background-color: #6aa89e;
   padding-top: 0.42rem;
   padding-bottom: 0.32rem;
-  position: absolute;
+  position: fixed;
   bottom: 0; }
   .login-footer .facebook-login {
     display: block;
