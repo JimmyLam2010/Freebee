@@ -158,4 +158,73 @@ body {
     .left-menu .menu-list ul li:hover {
       background-color: rgba(255, 255, 255, 0.1); }
 
-/*# sourceMappingURL=common.css.map */
+.feeds {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+  .feeds ul {
+    display: flex;
+    flex-direction: column; }
+    .feeds ul li {
+      background-image: url("../images/profile_bg.png");
+      background-size: cover;
+      padding-top: 4.8rem;
+      padding-left: 0.22rem;
+      padding-bottom: 0.16rem;
+      border-radius: 0.1rem;
+      margin-bottom: 0.36rem;
+      box-shadow: 0 0.1rem 0.1rem #333333;
+      position: relative; }
+      .feeds ul li .profile-photo {
+        display: inline-block;
+        width: 0.94rem;
+        height: 0.94rem;
+        border: 0.06rem solid #ffffff;
+        border-radius: 50%;
+        margin-right: 0.22rem; }
+      .feeds ul li .user-info {
+        display: inline-block; }
+        .feeds ul li .user-info .username {
+          font-size: 0.48rem;
+          color: #ffffff;
+          margin-bottom: 0.16rem; }
+        .feeds ul li .user-info .location {
+          font-size: 0.32rem;
+          color: #a49f99; }
+          .feeds ul li .user-info .location::before {
+            content: '';
+            display: inline-block;
+            width: 0.28rem;
+            height: 0.36rem;
+            background-image: url("../images/location.png");
+            background-size: cover;
+            margin-right: 0.25rem; }
+      .feeds ul li .feed-action {
+        display: flex;
+        width: 0;
+        flex-direction: column;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 0 0.1rem 0.1rem 0;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 0.5s ease-in-out; }
+        .feeds ul li .feed-action a {
+          padding: 0.3rem 0.12rem 0.3rem 0.1rem;
+          border-bottom: 0.02rem solid #f0f0f0; }
+          .feeds ul li .feed-action a img {
+            width: 0.76rem;
+            height: 0.68rem; }
+        .feeds ul li .feed-action .more {
+          border-bottom: none;
+          margin-top: 0.94rem; }
+          .feeds ul li .feed-action .more img {
+            width: 0.76rem;
+            height: 0.2rem; }
+
+/*# sourceMappingURL=feed.css.map */

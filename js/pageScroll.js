@@ -9,7 +9,7 @@ if (document.documentElement && document.documentElement.clientHeight){
     winHeight = document.documentElement.clientHeight;
 }
 
-var scrollingPage = document.getElementById("scrolling");
+var scrollingPage = document.getElementsById("scrolling");
 var header = document.getElementById("header");
 var footer = document.getElementById("footer");
 

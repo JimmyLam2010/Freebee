@@ -1,5 +1,164 @@
 @import url(reset.css);
 body {
+  background-color: #d9d2ca; }
+
+.header {
+  background-color: rgba(237, 143, 110, 0.9);
+  padding-top: 0.6rem;
+  height: 1.1rem;
+  padding-bottom: 0.32rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0.1rem 0.1rem #aea9a2;
+  z-index: 10; }
+  .header .back {
+    font-size: 1rem;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.24rem;
+    color: #ffffff;
+    text-shadow: 0.05rem 0.05rem 0.05rem #333333; }
+  .header .profile-name {
+    display: inline-block;
+    font-size: 0.72rem;
+    color: #ffffff;
+    text-shadow: 0.05rem 0.05rem 0.05rem #333333; }
+  .header .menu-tab {
+    position: absolute;
+    top: 0.66rem;
+    left: 0.26rem; }
+    .header .menu-tab img {
+      width: 0.92rem;
+      height: 0.72rem; }
+  .header .menu-tab::after {
+    content: '5';
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: #fadb9b;
+    border-radius: 0.1rem;
+    position: absolute;
+    top: -0.34rem;
+    right: -0.36rem; }
+  .header .logo {
+    display: inline-block; }
+    .header .logo img {
+      width: 3.04rem;
+      height: 1.12rem; }
+
+.footer {
+  background-color: #695f56;
+  box-shadow: 0 -0.1rem 0.1rem #333333;
+  padding-top: 0.27rem;
+  padding-bottom: 0.27rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 10; }
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around; }
+    .footer ul li {
+      flex-basis: 20%;
+      text-align: center; }
+      .footer ul li a img {
+        width: 0.88rem;
+        height: 0.88rem; }
+
+.left-menu {
+  width: 4.54rem;
+  height: 100%;
+  background-color: #685e55;
+  text-align: center;
+  padding-top: 0.66rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11; }
+  .left-menu form {
+    position: relative; }
+    .left-menu form input[type="submit"] {
+      width: 0.45rem;
+      height: 0.45rem;
+      background-image: url("../images/search.png");
+      background-size: cover;
+      border: none;
+      outline: none;
+      position: absolute;
+      top: 0.15rem;
+      left: 0.4rem; }
+    .left-menu form input[type="search"] {
+      width: 90%;
+      height: 0.74rem;
+      background-color: #5e564d;
+      border: 0.02rem solid #595148;
+      outline: none;
+      border-radius: 0.5rem;
+      padding-left: 0.8rem; }
+  .left-menu .profile-photo {
+    width: 3rem;
+    height: 3rem;
+    border: 0.2rem solid #5d554c;
+    border-radius: 50%;
+    margin-top: 0.32rem; }
+  .left-menu .username {
+    font-size: 0.48rem;
+    color: #ffffff;
+    margin-top: 0.28rem; }
+  .left-menu .location {
+    font-size: 0.32rem;
+    color: #a49f99;
+    margin-top: 0.16rem; }
+    .left-menu .location::before {
+      content: '';
+      display: inline-block;
+      width: 0.28rem;
+      height: 0.36rem;
+      background-image: url("../images/location.png");
+      background-size: cover;
+      margin-right: 0.25rem; }
+  .left-menu .switch {
+    margin-top: 0.4rem; }
+    .left-menu .switch ul li {
+      display: inline-block;
+      width: 0.2rem;
+      height: 0.2rem;
+      background-color: #ffffff;
+      border-radius: 50%;
+      opacity: 0.5;
+      margin-right: 0.1rem; }
+    .left-menu .switch ul li:first-child {
+      opacity: 1; }
+    .left-menu .switch ul li:hover {
+      opacity: 1; }
+  .left-menu .menu-list {
+    margin-top: 0.48rem; }
+    .left-menu .menu-list ul li {
+      border-bottom: 2px solid #5d554c;
+      padding-top: 0.25rem;
+      padding-bottom: 0.2rem;
+      text-align: left; }
+      .left-menu .menu-list ul li a img {
+        width: 0.84rem;
+        height: 0.84rem;
+        margin-left: 0.3rem;
+        transform: translateY(0.1rem); }
+      .left-menu .menu-list ul li a span {
+        display: inline-block;
+        margin-left: 0.5rem;
+        font-size: 0.5rem;
+        color: #ffffff;
+        transform: translateY(-0.1rem); }
+    .left-menu .menu-list ul li:first-child {
+      border-top: 2px solid #5d554c;
+      background-color: rgba(255, 255, 255, 0.1); }
+    .left-menu .menu-list ul li:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+
+body {
   background-color: #85d2c5;
   padding-top: 1.95rem; }
 
