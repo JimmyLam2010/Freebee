@@ -5,13 +5,16 @@ body {
 .header {
   background-color: rgba(237, 143, 110, 0.9);
   padding-top: 0.6rem;
-  height: 1.1rem;
+  width: 100%;
+  height: 1.42rem;
   padding-bottom: 0.32rem;
   text-align: center;
   position: fixed;
   top: 0;
+  left: 0;
   box-shadow: 0 0.1rem 0.1rem #aea9a2;
-  z-index: 10; }
+  z-index: 10;
+  transition: all 0.5s ease-in-out; }
   .header .back {
     font-size: 1rem;
     position: absolute;
@@ -50,11 +53,13 @@ body {
 .footer {
   background-color: #695f56;
   box-shadow: 0 -0.1rem 0.1rem #333333;
+  width: 100%;
   padding-top: 0.27rem;
   padding-bottom: 0.27rem;
   position: fixed;
   bottom: 0;
-  z-index: 10; }
+  z-index: 10;
+  transition: all 0.5s ease-in-out; }
   .footer ul {
     display: flex;
     flex-direction: row;
@@ -69,17 +74,21 @@ body {
 
 .left-menu {
   width: 4.54rem;
-  height: 90%;
+  height: 100%;
   background-color: #685e55;
   text-align: center;
-  padding: 0.66rem 0.2rem;
+  padding: 0 0.2rem;
   overflow-y: scroll;
+  overflow-x: hidden;
   position: absolute;
   top: 0;
+  left: 0;
   left: -4.94rem;
-  z-index: 11; }
+  z-index: 11;
+  transition: all 0.5s ease-in-out; }
   .left-menu form {
-    position: relative; }
+    position: relative;
+    margin-top: 0.66rem; }
     .left-menu form input[type="submit"] {
       width: 0.45rem;
       height: 0.45rem;
@@ -157,5 +166,9 @@ body {
       background-color: rgba(255, 255, 255, 0.1); }
     .left-menu .menu-list ul li:hover {
       background-color: rgba(255, 255, 255, 0.1); }
+
+.right-page {
+  overflow-x: hidden;
+  overflow-y: hidden; }
 
 /*# sourceMappingURL=common.css.map */

@@ -9,17 +9,116 @@
     <script src="js/device-fit.js"></script>
 </head>
 <body>
-    <div class="header" id="header">
-        <div class="menu-tab">
-            <a href="javascript:void(0)" id="menu_tab">
-                <img src="images/menu.png" alt="">
-            </a>
+    <div class="right-page" id="page_right">
+        <div class="header" id="header">
+            <div class="menu-tab">
+                <a href="javascript:void(0)" id="menu_tab">
+                    <img src="images/menu.png" alt="">
+                </a>
+            </div>
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
         </div>
-        <div class="logo">
-            <img src="images/logo.png" alt="">
+        <div class="feeds" id="scrolling">
+            <ul>
+                <li id="feed1" onclick="expand(1);">
+                    <img src="images/profile_photo.png" alt="" class="profile-photo">
+                    <div class="user-info">
+                        <p class="username">Jessica Alba</p>
+                        <p class="location">Los Angeles, CA</p>
+                    </div>
+                    <div class="feed-action" id="feed_action1">
+                        <a href="">
+                            <img src="images/like.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/message.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/share.png" alt="">
+                        </a>
+                        <a href="" class="more">
+                            <img src="images/more.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li id="feed2" onclick="expand(2);">
+                    <img src="images/profile_photo.png" alt="" class="profile-photo">
+                    <div class="user-info">
+                        <p class="username">Jessica Alba</p>
+                        <p class="location">Los Angeles, CA</p>
+                    </div>
+                    <div class="feed-action" id="feed_action2">
+                        <a href="">
+                            <img src="images/like.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/message.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/share.png" alt="">
+                        </a>
+                        <a href="" class="more">
+                            <img src="images/more.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li id="feed3" onclick="expand(3);">
+                    <img src="images/profile_photo.png" alt="" class="profile-photo">
+                    <div class="user-info">
+                        <p class="username">Jessica Alba</p>
+                        <p class="location">Los Angeles, CA</p>
+                    </div>
+                    <div class="feed-action" id="feed_action3">
+                        <a href="">
+                            <img src="images/like.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/message.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/share.png" alt="">
+                        </a>
+                        <a href="" class="more">
+                            <img src="images/more.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li id="feed4" onclick="expand(4);">
+                    <img src="images/profile_photo.png" alt="" class="profile-photo">
+                    <div class="user-info">
+                        <p class="username">Jessica Alba</p>
+                        <p class="location">Los Angeles, CA</p>
+                    </div>
+                    <div class="feed-action" id="feed_action4">
+                        <a href="">
+                            <img src="images/like.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/message.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/share.png" alt="">
+                        </a>
+                        <a href="" class="more">
+                            <img src="images/more.png" alt="">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer" id="footer">
+            <ul>
+                <li><a href=""><img src="images/home.png" alt=""></a></li>
+                <li><a href=""><img src="images/history.png" alt=""></a></li>
+                <li><a href=""><img src="images/photos.png" alt=""></a></li>
+                <li><a href=""><img src="images/profile.png" alt=""></a></li>
+                <li><a href=""><img src="images/favorites.png" alt=""></a></li>
+            </ul>
         </div>
     </div>
-    <div class="left-menu">
+    <div class="left-menu" id="left_menu">
         <form action="">
             <input type="submit" value="">
             <input type="search" name="search" id="search" placeholder="Search">
@@ -68,104 +167,8 @@
             </ul>
         </div>
     </div>
-    <div class="feeds" id="scrolling">
-        <ul>
-            <li id="feed1" onclick="expand(1);">
-                <img src="images/profile_photo.png" alt="" class="profile-photo">
-                <div class="user-info">
-                    <p class="username">Jessica Alba</p>
-                    <p class="location">Los Angeles, CA</p>
-                </div>
-                <div class="feed-action" id="feed_action1">
-                    <a href="">
-                        <img src="images/like.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="images/message.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="images/share.png" alt="">
-                    </a>
-                    <a href="" class="more">
-                        <img src="images/more.png" alt="">
-                    </a>
-                </div>
-            </li>
-            <li id="feed2" onclick="expand(2);">
-                <img src="images/profile_photo.png" alt="" class="profile-photo">
-                <div class="user-info">
-                    <p class="username">Jessica Alba</p>
-                    <p class="location">Los Angeles, CA</p>
-                </div>
-                <div class="feed-action" id="feed_action2">
-                    <a href="">
-                        <img src="images/like.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="images/message.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="images/share.png" alt="">
-                    </a>
-                    <a href="" class="more">
-                        <img src="images/more.png" alt="">
-                    </a>
-                </div>
-            </li>
-            <li id="feed3" onclick="expand(3);">
-                <img src="images/profile_photo.png" alt="" class="profile-photo">
-                <div class="user-info">
-                    <p class="username">Jessica Alba</p>
-                    <p class="location">Los Angeles, CA</p>
-                </div>
-                <div class="feed-action" id="feed_action3">
-                    <a href="">
-                        <img src="images/like.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="images/message.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="images/share.png" alt="">
-                    </a>
-                    <a href="" class="more">
-                        <img src="images/more.png" alt="">
-                    </a>
-                </div>
-            </li>
-            <li id="feed4" onclick="expand(4);">
-                <img src="images/profile_photo.png" alt="" class="profile-photo">
-                <div class="user-info">
-                    <p class="username">Jessica Alba</p>
-                    <p class="location">Los Angeles, CA</p>
-                </div>
-                <div class="feed-action" id="feed_action4">
-                    <a href="">
-                        <img src="images/like.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="images/message.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="images/share.png" alt="">
-                    </a>
-                    <a href="" class="more">
-                        <img src="images/more.png" alt="">
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="footer" id="footer">
-        <ul>
-            <li><a href=""><img src="images/home.png" alt=""></a></li>
-            <li><a href=""><img src="images/history.png" alt=""></a></li>
-            <li><a href=""><img src="images/photos.png" alt=""></a></li>
-            <li><a href=""><img src="images/profile.png" alt=""></a></li>
-            <li><a href=""><img src="images/favorites.png" alt=""></a></li>
-        </ul>
-    </div>
-
+    
+    <script src="js/open-menu.js"></script>
     <script src="js/pageScroll.js"></script>
     <script src="js/feed.js"></script>
 </body>
