@@ -77,18 +77,16 @@ body {
   height: 100%;
   background-color: #685e55;
   text-align: center;
-  padding: 0 0.2rem;
+  padding: 0.66rem 0.2rem;
   overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
   top: 0;
-  left: 0;
   left: -4.94rem;
   z-index: 11;
   transition: all 0.5s ease-in-out; }
   .left-menu form {
-    position: relative;
-    margin-top: 0.66rem; }
+    position: relative; }
     .left-menu form input[type="submit"] {
       width: 0.45rem;
       height: 0.45rem;
@@ -168,8 +166,12 @@ body {
       background-color: rgba(255, 255, 255, 0.1); }
 
 .right-page {
+  height: 100%;
   overflow-x: hidden;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 .profile {
   width: 95%;
